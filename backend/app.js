@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 
 var admin = require('firebase-admin')
 
-var serviceAccount = require('./pwa-firebase.json')
+var serviceAccount = require('./config/pwa-firebase.json')
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
